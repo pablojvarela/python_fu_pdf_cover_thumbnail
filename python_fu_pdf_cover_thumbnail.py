@@ -32,7 +32,7 @@ def thumb(img, imgdraw, pdf_folder, png_width, png_height):
 
 
 register(
-        "python_fu_pdf_cover_thumbnail",
+        "python_fu_pdf_thumbnail",
         "Make a thumbnail out of the first page in a PDF file",
         "Make a thumbnail out of the first page in a PDF file",
         "Pablo J. Varela",
@@ -47,3 +47,5 @@ register(
         ],
         [],
         thumb)
+
+main()
