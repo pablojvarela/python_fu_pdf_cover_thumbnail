@@ -1,4 +1,4 @@
-'''
+﻿'''
 Created on Apr 20, 2013
 @author: github.com/pablojvarela
 
@@ -26,7 +26,7 @@ def thumb(img, imgdraw, pdf_folder, png_width, png_height):
            filename, ext = os.path.splitext(pdf)
            if (ext == '.pdf'):
                print "found PDF: %s" % pdf
-               image, imagew, imageh =  pdb.file_pdf_load_thumb(pdf, png_height)
+               image =  pdb.file_pdf_load(pdf, pdf)
                pdb.gimp_image_scale(image, png_width, png_height)
                pdb.file_png_save(image, image.layers[0], filename+".png", filename +".png", 0, 9, 1, 1, 1, 1, 1)
 
